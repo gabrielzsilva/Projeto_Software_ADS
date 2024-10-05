@@ -8,6 +8,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+#FUNCIONALIDADE 1 - Cadastramento de chamados -> tabela chamados_suporte
 @app.route('/cadastrar', methods=['GET', 'POST'])
 def cadastrar():
     if request.method == 'POST':
@@ -23,6 +24,7 @@ def cadastrar():
         return redirect('/')
     return render_template('cadastrar.html')
 
+#FUNCIONALIDADE 2 - Atualização da tabela chamados_suporte
 @app.route('/atualizar', methods=['GET', 'POST'])
 def atualizar():
     if request.method == 'POST':

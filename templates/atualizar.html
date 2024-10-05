@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Chamado</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Atualizar Chamado</h1>
+        <form method="POST">
+            <label for="nome_cliente">Nome do Cliente</label>
+            <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+            <label for="data_abertura">Data de Abertura</label>
+            <input type="date" id="data_abertura" name="data_abertura" required>
+
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="aberto">Aberto</option>
+                <option value="em andamento">Em Andamento</option>
+                <option value="resolvido">Resolvido</option>
+            </select>
+
+            <label for="descricao_problema">Descrição do Problema</label>
+            <textarea id="descricao_problema" name="descricao_problema"></textarea>
+
+            <button type="submit">Atualizar</button>
+        </form>
+    </div>
+</body>
+</html>
