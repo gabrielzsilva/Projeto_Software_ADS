@@ -40,6 +40,8 @@ def atualizar():
         return redirect('/')
     return render_template('atualizar.html')
 
+
+#Funcionalidade 3 - Exclusão de chamados tabela chamados_suporte
 @app.route('/excluir', methods=['GET', 'POST'])
 def excluir():
     if request.method == 'POST':
